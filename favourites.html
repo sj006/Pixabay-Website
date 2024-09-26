@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixabay</title>
+  <link rel="icon" href="./image.png" type="image/x-icon">  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <!-- Header with Navbar -->
+  <header>
+    <nav class="navbar">
+      <!-- Mobile Menu Button -->
+      <div class="menu-button" id="menu-button">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="nav-brand">
+        <img src="./image.png" alt="Pixabay" style="width: 40px; border-radius: 50%">
+      </div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="./index.html" >Home</a></li>
+        <li><a href="./favourites.html" class="active">Favourites</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Loading screen -->
+  <div id="loading-screen">
+    <div class="intro-logo">
+      <span class="letter">P</span>
+      <span class="letter">i</span>
+      <span class="letter">x</span>
+      <span class="letter">a</span>
+      <span class="letter">b</span>
+      <span class="letter">a</span>
+      <span class="letter">y</span>
+    </div>
+    <div class="loader-animation">
+      <div class="loader-circle"></div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+   
+  <div class="container">
+    <h1>Favourite Images</h1>
+
+    <div id="image-results"></div>
+  </div>
+  <!-- Full-screen modal structure -->
+  <div id="image-modal" class="image-modal">
+    <button id="exit-button" class="exit-button">X</button>
+    <img id="full-image" src="" alt="Full screen image">
+  </div>
+  
+  <script src="fav.js"></script>
+
+  <script src="mobilemenu.js"></script>
+
+</body>
+</html>
